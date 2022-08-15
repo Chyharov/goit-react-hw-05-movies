@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import s from './SearchBar.module.css';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+// import { toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
 const SearchBar = () => {
   const navigate = useNavigate();
@@ -19,12 +19,12 @@ const SearchBar = () => {
     navigate(`?q=${searchQuery}`, {
       state: location.state,
     });
-    if (searchQuery === '') {
-      toast.error('Please, input your query for search!', {
-        autoClose: 5000,
-      });
-      return;
-    }
+    // if (searchQuery === '') {
+    //   toast.error('Please, input your query for search!', {
+    //     autoClose: 5000,
+    //   });
+    //   return;
+    // }
   };
 
   return (
