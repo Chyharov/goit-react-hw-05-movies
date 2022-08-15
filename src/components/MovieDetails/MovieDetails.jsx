@@ -23,7 +23,7 @@ const MovieDetails = ({ movie }) => {
             <div className={s.infoContainer}>
               <h2 className={s.title}>{movie.title}</h2>
               <p className={s.userScore}>
-                User Score: {movie.vote_average * 10}%
+                User Score: {Math.round(movie.vote_average) * 10}%
               </p>
               <p className={s.overviewTitle}>Overview:</p>
               <p className={s.overview}>{movie.overview}</p>
